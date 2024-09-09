@@ -1,0 +1,118 @@
+/*Tablets*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+   main{
+    background-image: linear-gradient(to bottom, violet, blueviolet);
+   }
+
+   #login{
+    width: 700px;
+    height: 320px;
+   }
+
+   #login > #imagem{
+    float: left;
+    width: 30%;
+    height: 100%;
+   }
+
+   #login > #formulario{
+    float: right;
+    width: 70%;
+    height: 100%;
+   }
+
+   #formulario p{
+      text-align: center;
+      max-width: 90%;
+      margin: auto;
+      font-size: 0.9em;
+   }
+
+   .campo{
+      width: 90%;
+      height: 40px
+   }
+
+   .campo > input{
+      height: 35px;
+   }
+
+   .campo span{
+      transform: translate(5px, 8px);
+   }
+
+   form > input[type=submit]{
+      width: 90%;
+      height: 40px;
+   }
+
+   #formulario > #esqueci-senha{
+      width: 90%;
+      height: 40px;
+  }
+
+  #esqueci-senha span{
+   left: 165px;
+  }
+
+}
+/*Computadores, TVs*/
+@media screen and (min-width: 992px){
+
+   main{
+      background-image: linear-gradient(to bottom, violet, blueviolet);
+     }
+
+   #login{
+      width: 950px;
+      height: 360px;
+   }
+
+   #imagem{
+      float: right;
+      width: 50%;
+      height: 100%;
+   }
+
+   #formulario{
+      float: left;
+      width: 50%;
+      height: 100%;
+   }
+
+   #formulario p{
+      text-align: center;
+      max-width: 90%;
+      margin: auto;
+      font-size: 0.9em;
+   }
+
+   .campo{
+      width: 90%;
+      height: 50px
+   }
+
+   .campo > input{
+      height: 45px;
+   }
+
+   .campo span{
+      transform: translate(5px, 11px);
+   }
+
+   form > input[type=submit]{
+      width: 90%;
+      height: 45px;
+   }
+
+   #formulario > #esqueci-senha{
+      width: 90%;
+      height: 45px;
+      padding-top: 10px;
+  }
+
+  #esqueci-senha span{
+      left: 165px;
+  }
+}

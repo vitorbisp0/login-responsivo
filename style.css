@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body,html{
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: violet;
+}
+
+#login{
+    overflow: hidden;
+   background-color: rgb(255, 255, 255);
+   width: 250px;
+   height: 515px;
+   position: absolute;
+   right: 50%;
+   left: 50%;
+   border-radius: 20px;
+   box-shadow: 0px 5px 10px black;
+
+   transform: translate(-50%, 200px);
+   transition: width .3s, height .3s;
+   transition-timing-function: cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+#login  h1{
+    text-align: center;
+    padding: 15px 0px 5px 0px;
+}
+
+#imagem{
+    display: block;
+    background-color: rgb(155, 155, 155);
+    background-image: url('predios.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 170px;
+}
+
+form p{
+    padding: 10px;
+    font-size: 0.8em;
+}
+
+.campo{
+    width: 230px;
+    height: 35px;
+    margin: auto;
+    background-color: blueviolet;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.campo span{
+    display: block;
+    color: rgb(255, 255, 255);
+    float: left;
+    width: 10px;
+    transform: translate(5px, 5px);
+    font-size: 27px;
+}
+
+.campo > input{
+    display: block;
+    float: right;
+    width: calc(100% - 35px);
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    transform: translate(-2px, 2px);
+}
+
+.campo > input:focus-within{
+    background-color: aqua;
+    transition: .3s;
+}
+
+form > input[type=submit]{
+    display: block;
+    width: 230px;
+    height: 35px;
+    margin: auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(67, 185, 185);
+    border: 1px outset aqua;
+    border-radius: 10px;
+}
+
+form > input[type=submit]:hover{
+    cursor: pointer;
+    background-color: rgb(0, 129, 129);
+    color: white;
+    
+}
+
+#formulario > #esqueci-senha{
+    background-color: rgb(255, 255, 255);
+    padding: 5.5px;
+    width: 230px;
+    height: 35px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px inset aqua;
+    position: relative;
+}
+
+#esqueci-senha > a{
+    text-decoration: none;
+    color: rgb(84, 131, 131);
+    display: block;
+}
+
+#esqueci-senha span{
+    display: inline-block;
+    position: absolute;
+    right: 36px;
+    top: 2.5px;
+    color: rgb(84, 131, 131);
+}
+
+#formulario > #esqueci-senha:hover{
+    background-color: rgb(138, 245, 245);
+    color: rgb(0, 129, 129);
+    cursor: pointer;
+}
+
+label{
+    display: none;
+}

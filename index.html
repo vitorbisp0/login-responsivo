@@ -19,18 +19,18 @@
                     <label for="email">Email</label>
                     <div class="campo">
                         <span id="rosto" class="material-symbols-outlined">face</span>
-                        <input type="email" name="email" id="email" placeholder="Seu email" autocomplete="email">
+                        <input type="email" name="email" id="email" placeholder="Seu email" autocomplete="email" required>
                         <label for="senha">Senha</label>
                     </div>
                     <div class="campo">
                         <span id="senha-icon" class="material-symbols-outlined">password</span>
-                        <input type="password" name="senha" id="senha" placeholder="Sua senha" autocomplete="new-password">
+                        <input type="password" name="senha" id="senha" placeholder="Sua senha" autocomplete="new-password" required minlength="5" maxlength="20">
                         <label for="senha">Senha</label>
                     </div>
-                    <input type="submit" value="Entrar">
+                    <input type="submit" value="Entrar" required>
                 </form>
                 <div id="esqueci-senha">
-                    <a href="#">Esqueci senha</a>
+                    <a href="#" target="_blank">Esqueci senha</a>
                     <span id="senha-icon" class="material-symbols-outlined">mail</span>
                 </div>
             </div>
